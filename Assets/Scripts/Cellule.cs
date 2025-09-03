@@ -6,6 +6,7 @@ public class Cellule : MonoBehaviour
     public bool arrowUp = false;
     public bool arrowDown = false;
     public bool arrowRight = false;
+    public bool arrowLeft = false;
 }
 
 public enum Base {

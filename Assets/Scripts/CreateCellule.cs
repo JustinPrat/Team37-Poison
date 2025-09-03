@@ -85,6 +85,14 @@ public class CreateCellule : MonoBehaviour
         }
     }
 
+    public void ReadArrowLeftInput(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            _cellule.arrowLeft = true;
+        }
+    }
+
     public void ReadValidateInput(InputAction.CallbackContext context)
     {
         if (context.performed)
