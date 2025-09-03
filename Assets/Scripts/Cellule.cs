@@ -1,17 +1,43 @@
+using Alchemy.Inspector;
 using UnityEngine;
 
 public class Cellule : MonoBehaviour
 {
-    public Base baseForm;
-    public bool arrowUp = false;
-    public bool arrowDown = false;
-    public bool arrowRight = false;
-    public bool arrowLeft = false;
-}
+    public TileForm tileForm;
+    public SpriteSelect spriteSelect;
 
-public enum Base {
-    None,
-    Square,
-    Circle,
-    Triangle
+    public SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteConnectionUp;
+    public SpriteRenderer spriteConnectionDown;
+    public SpriteRenderer spriteConnectionLeft;
+    public SpriteRenderer spriteConnectionRight;
+
+    [Button]
+    public void GetSprite ()
+    {
+        if (spriteSelect.baseSprites.ContainsKey(tileForm.baseForm))
+        {
+            spriteRenderer.sprite = spriteSelect.baseSprites[tileForm.baseForm];
+        }
+
+        if (tileForm.arrowUp)
+        {
+            spriteConnectionUp.sprite = spriteSelect.connectionSprites[Connection.Up];
+        }
+
+        if (tileForm.arrowDown)
+        {
+            spriteConnectionDown.sprite = spriteSelect.connectionSprites[Connection.Down];
+        }
+
+        if (tileForm.arrowLeft)
+        {
+            spriteConnectionLeft.sprite = spriteSelect.connectionSprites[Connection.Left];
+        }
+
+        if (tileForm.arrowRight)
+        {
+            spriteConnectionRight.sprite = spriteSelect.connectionSprites[Connection.Right];
+        }
+    }
 }

@@ -16,11 +16,11 @@ public class CreateCellule : MonoBehaviour
     {
         if (context.performed)
         {
-            Debug.Log(_cellule.baseForm);
-            if (_cellule.baseForm == Base.None)
+            Debug.Log(_cellule.tileForm.baseForm);
+            if (_cellule.tileForm.baseForm == Base.None)
             {
                 Debug.Log("Square");
-                _cellule.baseForm = Base.Square;
+                _cellule.tileForm.baseForm = Base.Square;
             }
             else
             {
@@ -33,10 +33,10 @@ public class CreateCellule : MonoBehaviour
     {
         if (context.performed)
         {
-            Debug.Log(_cellule.baseForm);
-            if (_cellule.baseForm == Base.None)
+            Debug.Log(_cellule.tileForm.baseForm);
+            if (_cellule.tileForm.baseForm == Base.None)
             {
-                _cellule.baseForm = Base.Circle;
+                _cellule.tileForm.baseForm = Base.Circle;
             }
             else
             {
@@ -49,10 +49,10 @@ public class CreateCellule : MonoBehaviour
     {
         if (context.performed)
         {
-            Debug.Log(_cellule.baseForm);
-            if (_cellule.baseForm == Base.None)
+            Debug.Log(_cellule.tileForm.baseForm);
+            if (_cellule.tileForm.baseForm == Base.None)
             {
-                _cellule.baseForm = Base.Triangle;
+                _cellule.tileForm.baseForm = Base.Triangle;
             }
             else
             {
@@ -65,7 +65,7 @@ public class CreateCellule : MonoBehaviour
     {
         if (context.performed)
         {
-            _cellule.arrowUp = true;
+            _cellule.tileForm.arrowUp = true;
         }
     }
 
@@ -73,7 +73,7 @@ public class CreateCellule : MonoBehaviour
     {
         if (context.performed)
         {
-            _cellule.arrowDown = true;
+            _cellule.tileForm.arrowDown = true;
         }
     }
 
@@ -81,7 +81,7 @@ public class CreateCellule : MonoBehaviour
     {
         if (context.performed)
         {
-            _cellule.arrowRight = true;
+            _cellule.tileForm.arrowRight = true;
         }
     }
 
@@ -89,7 +89,7 @@ public class CreateCellule : MonoBehaviour
     {
         if (context.performed)
         {
-            _cellule.arrowLeft = true;
+            _cellule.tileForm.arrowLeft = true;
         }
     }
 
