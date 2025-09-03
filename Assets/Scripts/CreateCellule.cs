@@ -5,6 +5,8 @@ public class CreateCellule : MonoBehaviour
 {
     [SerializeField] Cellule cellulePrefab;
 
+    [SerializeField] Transform anchorSpawnCellule;
+
     [SerializeField] private Cellule _cellule;
 
     private void Start()
@@ -97,8 +99,11 @@ public class CreateCellule : MonoBehaviour
     {
         if (context.performed)
         {
-            //Pour valider
-            _cellule = Instantiate(cellulePrefab);
+            if (_cellule.tileForm.baseForm != Base.None)
+            {
+                _cellule.transform.position = anchorSpawnCellule.position;
+                _cellule = Instantiate(cellulePrefab);
+            }
         }
     }
 }

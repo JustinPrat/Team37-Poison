@@ -8,10 +8,10 @@ using Alchemy.Inspector;
 [AlchemySerialize]
 public partial class SpriteSelect : ScriptableObject
 {
-    [AlchemySerializeField]
+    [AlchemySerializeField, NonSerialized]
     public Dictionary<Base, Sprite> baseSprites;
 
-    [AlchemySerializeField]
+    [AlchemySerializeField, NonSerialized]
     public Dictionary<Connection, Sprite> connectionSprites;
 }
 
@@ -23,6 +23,8 @@ public struct TileForm
     public bool arrowDown;
     public bool arrowRight;
     public bool arrowLeft;
+
+
 }
 
 public enum Base
