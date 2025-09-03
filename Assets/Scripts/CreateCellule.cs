@@ -106,4 +106,14 @@ public class CreateCellule : MonoBehaviour
             }
         }
     }
+
+    public void ReadRotateInput(InputAction.CallbackContext context)
+    {
+        Debug.Log("et la");
+        if (context.performed && CelluleTile.currentCellule != null)
+        {
+            Debug.Log("ok je suis ici");
+            CelluleTile.currentCellule.transform.Rotate(0f, 0f, 90f);
+        }
+    }
 }

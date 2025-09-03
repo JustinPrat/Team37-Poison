@@ -8,6 +8,8 @@ public class CelluleTile : MonoBehaviour
 
     private CelluleHolder _cellule;
 
+    public static CelluleTile currentCellule;
+
     #region Drag and Drop
     private void OnMouseUp()
     {
@@ -16,6 +18,7 @@ public class CelluleTile : MonoBehaviour
             canDrag = false;
             transform.position = _cellule.transform.position;
         }
+        currentCellule = null;
     }
 
     private void OnMouseDrag()
@@ -24,6 +27,7 @@ public class CelluleTile : MonoBehaviour
         {
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+            currentCellule = this;
         }
     }
     #endregion
