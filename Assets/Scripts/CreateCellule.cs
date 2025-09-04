@@ -42,7 +42,7 @@ public class CreateCellule : MonoBehaviour
             if (_cellule.tileForm.baseForm == Base.None)
             {
                 _cellule.tileForm.baseForm = Base.Square;
-                _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
+                _cellule.GetComponent<CelluleTile>().animator.SetTrigger("spawn");
             }
         }
     }
@@ -54,20 +54,7 @@ public class CreateCellule : MonoBehaviour
             if (_cellule.tileForm.baseForm == Base.None)
             {
                 _cellule.tileForm.baseForm = Base.Circle;
-                _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
-            }
-        }
-    }
-
-    public void ReadTriangleInput(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            Debug.Log(_cellule.tileForm.baseForm);
-            if (_cellule.tileForm.baseForm == Base.None)
-            {
-                _cellule.tileForm.baseForm = Base.Triangle;
-                _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
+                _cellule.GetComponent<CelluleTile>().animator.SetTrigger("spawn");
             }
         }
     }
@@ -114,9 +101,14 @@ public class CreateCellule : MonoBehaviour
         {
             if (_cellule.tileForm.baseForm != Base.None)
             {
-                _listCellule.Add(_cellule);
-                _cellule.transform.position = anchorSpawnCellule.position;
                 CelluleTile celluleTile = _cellule.GetComponent<CelluleTile>();
+
+                Vector3 cellulePos = new Vector3(Random.Range(anchorSpawnCellule.position.x - 2, anchorSpawnCellule.position.x + 2),
+                    Random.Range(anchorSpawnCellule.position.y - 1, anchorSpawnCellule.position.y + 1), anchorSpawnCellule.position.z);
+                _cellule.transform.position = cellulePos;
+
+                _listCellule.Add(_cellule);
+                celluleTile.animator.SetTrigger("drop");
                 celluleTile.SetGrabbable(true);
 
                 CelluleSpawn();

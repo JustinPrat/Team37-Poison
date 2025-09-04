@@ -39,6 +39,7 @@ public class CelluleTile : MonoBehaviour
             GameManager.instanceGameManager.VerifPatternComplete();
         }
 
+        _animator.SetTrigger("squishout");
         currentCellule = null;
     }
 
