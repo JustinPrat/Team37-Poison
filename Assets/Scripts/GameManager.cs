@@ -1,5 +1,6 @@
 using Alchemy.Serialization;
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -16,6 +17,8 @@ public partial class GameManager : MonoBehaviour
     public Transform _anchorGrille;
 
     private List<PoolElement> copyPoolGrille = new List<PoolElement>();
+
+    public Action OnWin;
 
     private void Awake()
     {
@@ -42,6 +45,7 @@ public partial class GameManager : MonoBehaviour
         if (_currentGrille.VerifGrille())
         {
             Debug.Log("c'est gagné");
+            OnWin?.Invoke();
             _intCurrentLevel++;
             Destroy(_currentGrille.gameObject);
             _currentGrille = Instantiate(poolGrille.GetGrille(_intCurrentLevel, copyPoolGrille));

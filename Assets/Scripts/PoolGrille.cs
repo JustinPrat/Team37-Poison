@@ -21,9 +21,9 @@ public class PoolGrille : ScriptableObject
                 }
                 else
                 {
-                    grille = item.grilles[Mathf.Min(item.grilles.Count -1, currentLevel)];
+                    grille = item.grilles[0];
                 }
-                //int rd = UnityEngine.Random.Range(0, item.grilles.Count - 1);
+
                 item.grilles.Remove(grille);
                 return grille;
             }

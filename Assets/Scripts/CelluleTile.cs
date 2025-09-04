@@ -24,23 +24,6 @@ public class CelluleTile : MonoBehaviour
 
     public void SetGrabbable(bool isGrabbable)
     {
-        Color colorBase = ownCellule.spriteRenderer.color;
-
-        //if (!isGrabbable)
-        //{
-        //    colorBase.a = 0.7f;
-        //}
-        //else
-        //{
-        //    colorBase.a = 1f;
-        //}
-
-        //ownCellule.spriteRenderer.color = colorBase;
-        //ownCellule.spriteConnectionUp.color = colorBase;
-        //ownCellule.spriteConnectionDown.color = colorBase;
-        //ownCellule.spriteConnectionLeft.color = colorBase;
-        //ownCellule.spriteConnectionRight.color = colorBase;
-
         canDrag = isGrabbable;
     }
 
@@ -80,12 +63,14 @@ public class CelluleTile : MonoBehaviour
     {
         if (collision.GetComponent<CelluleHolder>())
         {
-            _cellule = collision.GetComponent<CelluleHolder>();
-            Cellule cellule = _cellule.GetComponent<Cellule>();
-            if (cellule.tileForm.Equals(this.GetComponent<Cellule>().tileForm) && !_cellule.lockedInPattern)
+            CelluleHolder celluleHolder = collision.GetComponent<CelluleHolder>();
+            Cellule cellule = collision.GetComponent<Cellule>();
+
+            if (cellule.tileForm.Equals(this.GetComponent<Cellule>().tileForm) && !celluleHolder.lockedInPattern)
             {
                 aboveCorrectCelluleHolder = true;
-                Debug.Log("c'est ok");
+                _cellule = cellule.GetComponent<CelluleHolder>();
+                //Debug.Log("IN correct cellule holder");
             }
         }
     }
@@ -93,5 +78,6 @@ public class CelluleTile : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         aboveCorrectCelluleHolder = false;
+        //Debug.Log("OUT correct cellule holder");
     }
 }
