@@ -54,6 +54,7 @@ public class CelluleTile : MonoBehaviour
         {
             canDrag = false;
             transform.position = _cellule.transform.position;
+            GameManager.instanceGameManager.VerifPatternComplete();
         }
 
         currentCellule = null;

@@ -25,6 +25,7 @@ public partial class GameManager : MonoBehaviour
             PoolElement poolElement = new PoolElement();
             poolElement.maxLevel = poolGrille.poolElements[i].maxLevel;
             poolElement.grilles = new List<Grille>(poolGrille.poolElements[i].grilles);
+            poolElement.isRandom = poolGrille.poolElements[i].isRandom;
             copyPoolGrille.Add(poolElement);
         }
     }
