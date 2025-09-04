@@ -51,5 +51,7 @@ public class Cellule : MonoBehaviour
         tileForm.arrowRight = _arrowRight;
         tileForm.arrowDown = _arrowDown;
         tileForm.arrowLeft = _arrowLeft;
+
+        GetSprite();
     }
 }

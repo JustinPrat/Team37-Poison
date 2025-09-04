@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellule: {fileID: 8552969558290621350}
-  inPattern: 0
+  lockedInPattern: 0
 --- !u!61 &1144863988187772082
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellule: {fileID: 312848401159321008}
-  inPattern: 0
+  lockedInPattern: 0
 --- !u!61 &8177920818196398029
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -972,7 +972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellule: {fileID: 5408109157284653143}
-  inPattern: 0
+  lockedInPattern: 0
 --- !u!61 &9208729037820086907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1526,7 +1526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellule: {fileID: 8994525289733547768}
-  inPattern: 0
+  lockedInPattern: 0
 --- !u!61 &1407948045552115686
 BoxCollider2D:
   m_ObjectHideFlags: 0

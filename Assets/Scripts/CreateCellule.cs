@@ -35,17 +35,17 @@ public class CreateCellule : MonoBehaviour
         _listCellule.Clear();
     }
 
-    public void ReadSquareInput(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            if (_cellule.tileForm.baseForm == Base.None)
-            {
-                _cellule.tileForm.baseForm = Base.Square;
-                _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
-            }
-        }
-    }
+    //public void ReadSquareInput(InputAction.CallbackContext context)
+    //{
+    //    if (context.performed)
+    //    {
+    //        if (_cellule.tileForm.baseForm == Base.None)
+    //        {
+    //            _cellule.tileForm.baseForm = Base.Square;
+    //            _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
+    //        }
+    //    }
+    //}
 
     public void ReadCircleInput(InputAction.CallbackContext context)
     {
@@ -139,7 +139,7 @@ public class CreateCellule : MonoBehaviour
         if (context.performed && CelluleTile.currentCellule != null)
         {
             Debug.Log("ok je suis ici");
-            CelluleTile.currentCellule.transform.Rotate(0f, 0f, 90f);
+            //CelluleTile.currentCellule.transform.Rotate(0f, 0f, -90f);
             CelluleTile.currentCellule.ownCellule.Turn();
         }
     }
