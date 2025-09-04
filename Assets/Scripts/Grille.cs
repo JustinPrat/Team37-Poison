@@ -14,7 +14,7 @@ public class Grille : MonoBehaviour
             for (int j = 0; j < y; j++)
             {
                 Cellule cellule = Instantiate(cellulePrefab, this.transform);
-                cellule.GetComponent<CelluleHolder>().inPattern = false;
+                cellule.GetComponent<CelluleHolder>().lockedInPattern = false;
                 cellule.transform.position = new Vector3(i, j, 0);
             }
         }
@@ -34,8 +34,7 @@ public class Grille : MonoBehaviour
     {
         for (int i = transform.childCount - 1; i >= 0; i--)
         {
-            transform.GetChild(i).GetComponent<CelluleHolder>().VerifEmptyCellule();
-            if (!transform.GetChild(i).GetComponent<CelluleHolder>().inPattern)
+            if (!transform.GetChild(i).GetComponent<CelluleHolder>().lockedInPattern)
             {
                 return false;
             }

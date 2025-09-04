@@ -3,8 +3,7 @@ using UnityEngine;
 
 public class CelluleTile : MonoBehaviour
 {
-
-    private bool inCorrectCelluleHolder;
+    private bool aboveCorrectCelluleHolder;
     private bool canDrag = true;
 
     private CelluleHolder _cellule;
@@ -50,10 +49,11 @@ public class CelluleTile : MonoBehaviour
     #region Drag and Drop
     private void OnMouseUp()
     {
-        if (inCorrectCelluleHolder)
+        if (aboveCorrectCelluleHolder)
         {
             canDrag = false;
             transform.position = _cellule.transform.position;
+            _cellule.lockedInPattern = true;
         }
 
         currentCellule = null;
@@ -84,19 +84,16 @@ public class CelluleTile : MonoBehaviour
             _cellule = collision.GetComponent<CelluleHolder>();
             Cellule cellule = _cellule.GetComponent<Cellule>();
 
-            if (cellule.tileForm.Equals(this.GetComponent<Cellule>().tileForm) && _cellule.canReceiveCellule)
+            if (cellule.tileForm.Equals(this.GetComponent<Cellule>().tileForm) && !_cellule.lockedInPattern)
             {
-                _cellule.canReceiveCellule = false;
-                inCorrectCelluleHolder = true;
-                _cellule.inPattern = true;
+                aboveCorrectCelluleHolder = true;
                 Debug.Log("c'est ok");
             }
-            Debug.Log("ta mere");
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        inCorrectCelluleHolder = false;
+        aboveCorrectCelluleHolder = false;
     }
 }
