@@ -8,13 +8,24 @@ public class PoolGrille : ScriptableObject
 {
     public List<PoolElement> poolElements;
 
-    public Grille GetGrille(int currentLevel)
+    public Grille GetGrille(int currentLevel, List<PoolElement> listPoolElements)
     {
-        foreach (PoolElement item in poolElements)
+        foreach (PoolElement item in listPoolElements)
         {
             if (currentLevel <= item.maxLevel)
             {
-                return item.grilles[UnityEngine.Random.Range(0, item.grilles.Count - 1)];
+                Grille grille;
+                if (item.isRandom)
+                {
+                    grille = item.grilles[UnityEngine.Random.Range(0, item.grilles.Count)];
+                }
+                else
+                {
+                    grille = item.grilles[Mathf.Min(item.grilles.Count -1, currentLevel)];
+                }
+                //int rd = UnityEngine.Random.Range(0, item.grilles.Count - 1);
+                item.grilles.Remove(grille);
+                return grille;
             }
         }
         return null;
@@ -24,6 +35,7 @@ public class PoolGrille : ScriptableObject
 [Serializable]
 public struct PoolElement
 {
+    public bool isRandom;
     public int maxLevel;
     public List<Grille> grilles;
 }
