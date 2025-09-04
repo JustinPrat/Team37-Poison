@@ -15,10 +15,7 @@ public class Cellule : MonoBehaviour
     [Button]
     public void GetSprite ()
     {
-        if (spriteSelect.baseSprites.ContainsKey(tileForm.baseForm))
-        {
-            spriteRenderer.sprite = spriteSelect.baseSprites[tileForm.baseForm];
-        }
+        spriteRenderer.sprite = spriteSelect.baseSprites[tileForm.baseForm];
 
         spriteConnectionUp.sprite = tileForm.arrowUp ? spriteSelect.connectionSprites[Connection.Up] : null;
         spriteConnectionDown.sprite = tileForm.arrowDown ? spriteSelect.connectionSprites[Connection.Down] : null;

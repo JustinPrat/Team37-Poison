@@ -9,6 +9,8 @@ public class CelluleHolder : MonoBehaviour
     [HideInInspector]
     public bool inPattern = false;
 
+    public bool canReceiveCellule = true;
+
     private void Start()
     {
         tileFormEmpty.baseForm = Base.None;

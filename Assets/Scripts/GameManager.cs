@@ -30,6 +30,7 @@ public partial class GameManager : MonoBehaviour
     {
         if (_currentGrille.VerifGrille())
         {
+            Debug.Log("c'est gagné");
             _intCurrentLevel++;
             Destroy(_currentGrille.gameObject);
             _currentGrille = Instantiate(poolGrille.GetGrille(_intCurrentLevel));

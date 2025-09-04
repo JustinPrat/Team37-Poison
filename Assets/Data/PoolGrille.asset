@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 493f843c81e27f64ba41ffa0b0e04f21, type: 3}
   m_Name: PoolGrille
   m_EditorClassIdentifier: 
-  poolElements: []
+  poolElements:
+  - maxLevel: 5
+    grilles:
+    - {fileID: 4165763595416458453, guid: c1caaf593539d9f42a0dfc67e0094d28, type: 3}

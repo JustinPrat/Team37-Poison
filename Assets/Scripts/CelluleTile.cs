@@ -84,8 +84,9 @@ public class CelluleTile : MonoBehaviour
             _cellule = collision.GetComponent<CelluleHolder>();
             Cellule cellule = _cellule.GetComponent<Cellule>();
 
-            if (cellule.tileForm.Equals(this.GetComponent<Cellule>().tileForm))
+            if (cellule.tileForm.Equals(this.GetComponent<Cellule>().tileForm) && _cellule.canReceiveCellule)
             {
+                _cellule.canReceiveCellule = false;
                 inCorrectCelluleHolder = true;
                 _cellule.inPattern = true;
                 Debug.Log("c'est ok");
