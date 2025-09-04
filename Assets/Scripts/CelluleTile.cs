@@ -44,8 +44,6 @@ public class CelluleTile : MonoBehaviour
         canDrag = isGrabbable;
     }
 
-
-
     #region Drag and Drop
     private void OnMouseUp()
     {
@@ -54,6 +52,8 @@ public class CelluleTile : MonoBehaviour
             canDrag = false;
             transform.position = _cellule.transform.position;
             _cellule.lockedInPattern = true;
+
+            GameManager.instanceGameManager.VerifPatternComplete();
         }
 
         currentCellule = null;
@@ -78,12 +78,10 @@ public class CelluleTile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
         if (collision.GetComponent<CelluleHolder>())
         {
             _cellule = collision.GetComponent<CelluleHolder>();
             Cellule cellule = _cellule.GetComponent<Cellule>();
-
             if (cellule.tileForm.Equals(this.GetComponent<Cellule>().tileForm) && !_cellule.lockedInPattern)
             {
                 aboveCorrectCelluleHolder = true;

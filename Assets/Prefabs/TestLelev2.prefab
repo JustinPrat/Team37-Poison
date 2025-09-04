@@ -115,7 +115,7 @@ Transform:
   m_GameObject: {fileID: 730077078141719876}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08110201, y: 4.03142, z: -1.6018374}
+  m_LocalPosition: {x: -0.08110201, y: 1.0699999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -159,8 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellule: {fileID: 1876699836115871358}
-  inPattern: 0
-  canReceiveCellule: 1
+  lockedInPattern: 0
 --- !u!61 &8839075787625444901
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1121,7 +1120,7 @@ Transform:
   m_GameObject: {fileID: 2165464291229885091}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08110201, y: 3.0314202, z: -1.6018374}
+  m_LocalPosition: {x: -0.08110201, y: 0.06999993, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1165,8 +1164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellule: {fileID: 969958381734825717}
-  inPattern: 0
-  canReceiveCellule: 1
+  lockedInPattern: 0
 --- !u!61 &5626338943558396516
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1589,7 +1587,7 @@ Transform:
   m_GameObject: {fileID: 2753651275124545887}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.081102, y: 4.03142, z: -1.6018374}
+  m_LocalPosition: {x: -1.081102, y: 1.0699999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1633,8 +1631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellule: {fileID: 7734804103401907213}
-  inPattern: 0
-  canReceiveCellule: 1
+  lockedInPattern: 0
 --- !u!61 &7204277096841763559
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1883,7 +1880,7 @@ Transform:
   m_GameObject: {fileID: 3691001213414769638}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.918898, y: 4.03142, z: -1.6018374}
+  m_LocalPosition: {x: 0.918898, y: 1.0699999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1927,8 +1924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellule: {fileID: 3117703587107961049}
-  inPattern: 0
-  canReceiveCellule: 1
+  lockedInPattern: 0
 --- !u!61 &3247527267513400476
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2003,7 +1999,7 @@ Transform:
   m_GameObject: {fileID: 3991505059256274329}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08110201, y: 2.0314202, z: -1.6018374}
+  m_LocalPosition: {x: -0.08110201, y: -0.93000007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2047,8 +2043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellule: {fileID: 1092578988981752692}
-  inPattern: 0
-  canReceiveCellule: 1
+  lockedInPattern: 0
 --- !u!61 &8934513593752859518
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2210,7 +2205,7 @@ Transform:
   m_GameObject: {fileID: 4349572149868757770}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.918898, y: 2.0314202, z: -1.6018374}
+  m_LocalPosition: {x: 0.918898, y: -0.93000007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2254,8 +2249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellule: {fileID: 8967806776121857128}
-  inPattern: 0
-  canReceiveCellule: 1
+  lockedInPattern: 0
 --- !u!61 &8565439515242394044
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3038,7 +3032,7 @@ Transform:
   m_GameObject: {fileID: 6061056131052526873}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.081102, y: 2.0314202, z: -1.6018374}
+  m_LocalPosition: {x: -1.081102, y: -0.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3082,8 +3076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellule: {fileID: 5458641529511813112}
-  inPattern: 0
-  canReceiveCellule: 1
+  lockedInPattern: 0
 --- !u!61 &236548745594596506
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3506,7 +3499,7 @@ Transform:
   m_GameObject: {fileID: 6774075728593440787}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.918898, y: 3.0314202, z: -1.6018374}
+  m_LocalPosition: {x: 0.918898, y: 0.06999993, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3550,8 +3543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellule: {fileID: 4700192366808291570}
-  inPattern: 0
-  canReceiveCellule: 1
+  lockedInPattern: 0
 --- !u!61 &5786498527852715251
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4152,7 +4144,7 @@ Transform:
   m_GameObject: {fileID: 7707670694203100821}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.081102, y: 3.0314202, z: -1.6018374}
+  m_LocalPosition: {x: -1.081102, y: 0.06999993, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4196,8 +4188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellule: {fileID: 7839023155632585644}
-  inPattern: 0
-  canReceiveCellule: 1
+  lockedInPattern: 0
 --- !u!61 &3645212733892591502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4883,7 +4874,7 @@ Transform:
   m_GameObject: {fileID: 8572011564832756010}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.081102, y: -2.0314202, z: 1.6018374}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

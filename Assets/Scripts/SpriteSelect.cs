@@ -23,8 +23,6 @@ public struct TileForm
     public bool arrowDown;
     public bool arrowRight;
     public bool arrowLeft;
-
-
 }
 
 public enum Base
