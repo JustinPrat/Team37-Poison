@@ -37,15 +37,10 @@ public class CreateCellule : MonoBehaviour
     {
         if (context.performed)
         {
-            Debug.Log(_cellule.tileForm.baseForm);
             if (_cellule.tileForm.baseForm == Base.None)
             {
                 _cellule.tileForm.baseForm = Base.Circle;
                 _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
-            }
-            else
-            {
-                Debug.Log("Naaan");
             }
         }
     }
@@ -59,10 +54,6 @@ public class CreateCellule : MonoBehaviour
             {
                 _cellule.tileForm.baseForm = Base.Triangle;
                 _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
-            }
-            else
-            {
-                Debug.Log("Naaan");
             }
         }
     }
