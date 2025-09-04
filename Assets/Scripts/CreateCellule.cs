@@ -114,6 +114,7 @@ public class CreateCellule : MonoBehaviour
         {
             Debug.Log("ok je suis ici");
             CelluleTile.currentCellule.transform.Rotate(0f, 0f, 90f);
+            CelluleTile.currentCellule.hisCellule.Turn();
         }
     }
 }

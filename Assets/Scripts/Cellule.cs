@@ -40,4 +40,35 @@ public class Cellule : MonoBehaviour
             spriteConnectionRight.sprite = spriteSelect.connectionSprites[Connection.Right];
         }
     }
+
+
+    public void Turn()
+    {
+        bool _arrowUp = false;
+        bool _arrowDown = false;
+        bool _arrowLeft = false;
+        bool _arrowRight = false;
+
+        if (tileForm.arrowUp)
+        {
+            _arrowRight = true;
+        }
+        if (tileForm.arrowRight)
+        {
+            _arrowDown = true;
+        }
+        if (tileForm.arrowDown)
+        {
+            _arrowLeft = true;
+        }
+        if (tileForm.arrowLeft)
+        {
+            _arrowUp = true;
+        }
+
+        tileForm.arrowUp = _arrowUp;
+        tileForm.arrowRight = _arrowRight;
+        tileForm.arrowDown = _arrowDown;
+        tileForm.arrowLeft = _arrowLeft;
+    }
 }

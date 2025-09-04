@@ -10,6 +10,9 @@ public class CelluleTile : MonoBehaviour
 
     public static CelluleTile currentCellule;
 
+    public Cellule hisCellule;
+
+
     #region Drag and Drop
     private void OnMouseUp()
     {
