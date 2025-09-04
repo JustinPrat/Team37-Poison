@@ -41,7 +41,6 @@ public class Cellule : MonoBehaviour
         }
     }
 
-
     public void Turn()
     {
         bool _arrowUp = false;
