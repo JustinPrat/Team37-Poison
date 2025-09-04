@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,25 +11,38 @@ public class CreateCellule : MonoBehaviour
 
     private Cellule _cellule;
 
+    private List<Cellule> _listCellule = new List<Cellule>();
+
     private void Start()
     {
         CelluleSpawn();
+        GameManager.instanceGameManager.OnWin += DestroyElements;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.instanceGameManager.OnWin -= DestroyElements;
+    }
+
+    private void DestroyElements ()
+    {
+        for (int i = _listCellule.Count - 1; i >= 0; i--)
+        {
+            if (_listCellule[i] != null)
+                Destroy(_listCellule[i].gameObject);
+        }
+
+        _listCellule.Clear();
     }
 
     public void ReadSquareInput(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            Debug.Log(_cellule.tileForm.baseForm);
             if (_cellule.tileForm.baseForm == Base.None)
             {
-                Debug.Log("Square");
                 _cellule.tileForm.baseForm = Base.Square;
                 _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
-            }
-            else
-            {
-                Debug.Log("Naaan");
             }
         }
     }
@@ -100,6 +114,7 @@ public class CreateCellule : MonoBehaviour
         {
             if (_cellule.tileForm.baseForm != Base.None)
             {
+                _listCellule.Add(_cellule);
                 _cellule.transform.position = anchorSpawnCellule.position;
                 CelluleTile celluleTile = _cellule.GetComponent<CelluleTile>();
                 celluleTile.SetGrabbable(true);
