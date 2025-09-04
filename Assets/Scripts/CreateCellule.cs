@@ -24,6 +24,7 @@ public class CreateCellule : MonoBehaviour
             {
                 Debug.Log("Square");
                 _cellule.tileForm.baseForm = Base.Square;
+                _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
             }
             else
             {
@@ -40,6 +41,7 @@ public class CreateCellule : MonoBehaviour
             if (_cellule.tileForm.baseForm == Base.None)
             {
                 _cellule.tileForm.baseForm = Base.Circle;
+                _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
             }
             else
             {
@@ -56,6 +58,7 @@ public class CreateCellule : MonoBehaviour
             if (_cellule.tileForm.baseForm == Base.None)
             {
                 _cellule.tileForm.baseForm = Base.Triangle;
+                _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
             }
             else
             {
@@ -69,6 +72,7 @@ public class CreateCellule : MonoBehaviour
         if (context.performed)
         {
             _cellule.tileForm.arrowUp = true;
+            _cellule.GetSprite();
         }
     }
 
@@ -77,6 +81,7 @@ public class CreateCellule : MonoBehaviour
         if (context.performed)
         {
             _cellule.tileForm.arrowDown = true;
+            _cellule.GetSprite();
         }
     }
 
@@ -85,6 +90,7 @@ public class CreateCellule : MonoBehaviour
         if (context.performed)
         {
             _cellule.tileForm.arrowRight = true;
+            _cellule.GetSprite();
         }
     }
 
@@ -93,6 +99,7 @@ public class CreateCellule : MonoBehaviour
         if (context.performed)
         {
             _cellule.tileForm.arrowLeft = true;
+            _cellule.GetSprite();
         }
     }
 

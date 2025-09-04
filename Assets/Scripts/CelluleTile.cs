@@ -12,6 +12,13 @@ public class CelluleTile : MonoBehaviour
     [SerializeField]
     private Animator _animator;
 
+    [SerializeField]
+    private ParticleSystem _spawnParticles;
+
+    public ParticleSystem SpawnParticles => _spawnParticles;
+
+    public Animator animator => _animator;
+
     public static CelluleTile currentCellule;
 
     public Cellule ownCellule;
@@ -20,20 +27,20 @@ public class CelluleTile : MonoBehaviour
     {
         Color colorBase = ownCellule.spriteRenderer.color;
 
-        if (!isGrabbable)
-        {
-            colorBase.a = 0.7f;
-        }
-        else
-        {
-            colorBase.a = 1f;
-        }
+        //if (!isGrabbable)
+        //{
+        //    colorBase.a = 0.7f;
+        //}
+        //else
+        //{
+        //    colorBase.a = 1f;
+        //}
 
-        ownCellule.spriteRenderer.color = colorBase;
-        ownCellule.spriteConnectionUp.color = colorBase;
-        ownCellule.spriteConnectionDown.color = colorBase;
-        ownCellule.spriteConnectionLeft.color = colorBase;
-        ownCellule.spriteConnectionRight.color = colorBase;
+        //ownCellule.spriteRenderer.color = colorBase;
+        //ownCellule.spriteConnectionUp.color = colorBase;
+        //ownCellule.spriteConnectionDown.color = colorBase;
+        //ownCellule.spriteConnectionLeft.color = colorBase;
+        //ownCellule.spriteConnectionRight.color = colorBase;
 
         canDrag = isGrabbable;
     }
@@ -47,11 +54,7 @@ public class CelluleTile : MonoBehaviour
             canDrag = false;
             transform.position = _cellule.transform.position;
         }
-        else
-        {
-            _animator.SetTrigger("squish");
-        }
-            
+
         currentCellule = null;
     }
 

@@ -20,25 +20,10 @@ public class Cellule : MonoBehaviour
             spriteRenderer.sprite = spriteSelect.baseSprites[tileForm.baseForm];
         }
 
-        if (tileForm.arrowUp)
-        {
-            spriteConnectionUp.sprite = spriteSelect.connectionSprites[Connection.Up];
-        }
-
-        if (tileForm.arrowDown)
-        {
-            spriteConnectionDown.sprite = spriteSelect.connectionSprites[Connection.Down];
-        }
-
-        if (tileForm.arrowLeft)
-        {
-            spriteConnectionLeft.sprite = spriteSelect.connectionSprites[Connection.Left];
-        }
-
-        if (tileForm.arrowRight)
-        {
-            spriteConnectionRight.sprite = spriteSelect.connectionSprites[Connection.Right];
-        }
+        spriteConnectionUp.sprite = tileForm.arrowUp ? spriteSelect.connectionSprites[Connection.Up] : null;
+        spriteConnectionDown.sprite = tileForm.arrowDown ? spriteSelect.connectionSprites[Connection.Down] : null;
+        spriteConnectionLeft.sprite = tileForm.arrowLeft ? spriteSelect.connectionSprites[Connection.Left] : null;
+        spriteConnectionRight.sprite = tileForm.arrowRight ? spriteSelect.connectionSprites[Connection.Right] : null;
     }
 
     public void Turn()
