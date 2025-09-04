@@ -13,6 +13,7 @@ public class CelluleTile : MonoBehaviour
     public Cellule hisCellule;
 
 
+
     #region Drag and Drop
     private void OnMouseUp()
     {
@@ -46,6 +47,7 @@ public class CelluleTile : MonoBehaviour
             if (cellule.tileForm.Equals(this.GetComponent<Cellule>().tileForm))
             {
                 inCorrectCelluleHolder = true;
+                _cellule.inPattern = true;
                 Debug.Log("c'est ok");
             }
             Debug.Log("ta mere");

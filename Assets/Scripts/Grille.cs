@@ -14,6 +14,7 @@ public class Grille : MonoBehaviour
             for (int j = 0; j < y; j++)
             {
                 Cellule cellule = Instantiate(cellulePrefab, this.transform);
+                cellule.GetComponent<CelluleHolder>().inPattern = false;
                 cellule.transform.position = new Vector3(i, j, 0);
             }
         }
@@ -27,5 +28,18 @@ public class Grille : MonoBehaviour
                 DestroyImmediate(transform.GetChild(i).gameObject);
             #endif
         }
+    }
+
+    public bool VerifGrille()
+    {
+        for (int i = transform.childCount - 1; i >= 0; i--)
+        {
+            transform.GetChild(i).GetComponent<CelluleHolder>().VerifEmptyCellule();
+            if (!transform.GetChild(i).GetComponent<CelluleHolder>().inPattern)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }

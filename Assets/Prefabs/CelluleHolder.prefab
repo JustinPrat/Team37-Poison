@@ -217,6 +217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 823e85fe1c4a8bb47b97e551b84d0c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cellule: {fileID: 1332122152667323905}
+  inPattern: 0
 --- !u!61 &-5179093505739339544
 BoxCollider2D:
   m_ObjectHideFlags: 0
