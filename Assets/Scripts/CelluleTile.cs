@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class CelluleTile : MonoBehaviour
@@ -8,9 +9,41 @@ public class CelluleTile : MonoBehaviour
 
     private CelluleHolder _cellule;
 
+    [SerializeField]
+    private Animator _animator;
+
+    [SerializeField]
+    private ParticleSystem _spawnParticles;
+
+    public ParticleSystem SpawnParticles => _spawnParticles;
+
+    public Animator animator => _animator;
+
     public static CelluleTile currentCellule;
 
-    public Cellule hisCellule;
+    public Cellule ownCellule;
+
+    public void SetGrabbable(bool isGrabbable)
+    {
+        Color colorBase = ownCellule.spriteRenderer.color;
+
+        //if (!isGrabbable)
+        //{
+        //    colorBase.a = 0.7f;
+        //}
+        //else
+        //{
+        //    colorBase.a = 1f;
+        //}
+
+        //ownCellule.spriteRenderer.color = colorBase;
+        //ownCellule.spriteConnectionUp.color = colorBase;
+        //ownCellule.spriteConnectionDown.color = colorBase;
+        //ownCellule.spriteConnectionLeft.color = colorBase;
+        //ownCellule.spriteConnectionRight.color = colorBase;
+
+        canDrag = isGrabbable;
+    }
 
 
 
@@ -22,6 +55,7 @@ public class CelluleTile : MonoBehaviour
             canDrag = false;
             transform.position = _cellule.transform.position;
         }
+
         currentCellule = null;
     }
 
@@ -29,12 +63,18 @@ public class CelluleTile : MonoBehaviour
     {
         if (canDrag)
         {
+            if (currentCellule != this)
+            {
+                _animator.SetTrigger("squish");
+            }
+
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(transform.position.x, transform.position.y, 0);
             currentCellule = this;
         }
     }
     #endregion
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
