@@ -1,4 +1,6 @@
 using Alchemy.Inspector;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class Grille : MonoBehaviour
@@ -13,10 +15,19 @@ public class Grille : MonoBehaviour
         {
             for (int j = 0; j < y; j++)
             {
-                Cellule cellule = Instantiate(cellulePrefab, this.transform);
+                Cellule cellule = PrefabUtility.InstantiatePrefab(cellulePrefab, this.transform).GetComponent<Cellule>();
                 cellule.GetComponent<CelluleHolder>().lockedInPattern = false;
                 cellule.transform.position = new Vector3(i, j, 0);
             }
+        }
+    }
+
+    [Button]
+    private void UpdateSprites ()
+    {
+        for (int i = transform.childCount - 1; i >= 0; i--)
+        {
+            transform.GetChild(i).GetComponent<Cellule>().GetSprite();
         }
     }
 

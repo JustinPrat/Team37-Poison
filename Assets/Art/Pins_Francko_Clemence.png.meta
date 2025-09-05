@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pins_Francko_Clemence_0: 4403400915192831085
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

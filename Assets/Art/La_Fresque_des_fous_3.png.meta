@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      La_Fresque_des_fous_3_0: 5840945930037279220
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
