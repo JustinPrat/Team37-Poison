@@ -86,6 +86,7 @@ public partial class GameManager : MonoBehaviour
             if (_intCurrentLevel >= 37)
             {
                 WinGame();
+                return;
             }
             OnWin?.Invoke();
             Destroy(_currentGrille.gameObject);
