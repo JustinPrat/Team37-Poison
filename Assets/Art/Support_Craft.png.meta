@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 07f7519fae266eb429a5f9d2b2b981b0
+guid: 52d55a9f4398ed146a0927cf0b02fb52
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7714507097989136684
-    second: "Dessin_Pi\xE8ce_Carr\xE9_0"
+      213: 1068217457281319189
+    second: Support_Craft_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Dessin_Pi\xE8ce_Carr\xE9_0"
+      name: Support_Craft_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 41
-        width: 208
-        height: 283
+        x: 12
+        y: 6
+        width: 506
+        height: 458
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4deb027eaa090f490800000000000000
-      internalID: -7714507097989136684
+      spriteID: 511cf142e1213de00800000000000000
+      internalID: 1068217457281319189
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Dessin_Pi\xE8ce_Carr\xE9_0": -7714507097989136684
+      Support_Craft_0: 1068217457281319189
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

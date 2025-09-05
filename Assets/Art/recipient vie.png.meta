@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 07f7519fae266eb429a5f9d2b2b981b0
+guid: c1bc211774e650a4bbd6d604991fe810
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7714507097989136684
-    second: "Dessin_Pi\xE8ce_Carr\xE9_0"
+      213: -1797213223467955780
+    second: recipient vie_0
+  - first:
+      213: -5882488376130793282
+    second: recipient vie_1
+  - first:
+      213: 908724205693344716
+    second: recipient vie_2
+  - first:
+      213: 1539573028617334325
+    second: recipient vie_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +105,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Dessin_Pi\xE8ce_Carr\xE9_0"
+      name: recipient vie_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 41
-        width: 208
-        height: 283
+        x: 0
+        y: 0
+        width: 538
+        height: 175
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4deb027eaa090f490800000000000000
-      internalID: -7714507097989136684
+      spriteID: cb9ce8568140f07e0800000000000000
+      internalID: -1797213223467955780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recipient vie_1
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 82
+        width: 445
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb01c591df33d5ea0800000000000000
+      internalID: -5882488376130793282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recipient vie_2
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 51
+        width: 77
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb9627b9df6c9c00800000000000000
+      internalID: 908724205693344716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recipient vie_3
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 41
+        width: 131
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e22843389ad5510800000000000000
+      internalID: 1539573028617334325
       vertices: []
       indices: 
       edges: []
@@ -135,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Dessin_Pi\xE8ce_Carr\xE9_0": -7714507097989136684
+      recipient vie_0: -1797213223467955780
+      recipient vie_1: -5882488376130793282
+      recipient vie_2: 908724205693344716
+      recipient vie_3: 1539573028617334325
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
