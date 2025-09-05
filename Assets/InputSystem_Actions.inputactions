@@ -101,11 +101,33 @@
                 },
                 {
                     "name": "",
+                    "id": "f68c8a91-6cee-4a0c-acc9-5757e099c2ca",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Square",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8ff21301-2b7a-4831-bfa3-72a49c51e22b",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
+                    "action": "Circle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ef9c8329-0313-4dd7-95c5-26e97426ab21",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Circle",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -134,11 +156,33 @@
                 },
                 {
                     "name": "",
+                    "id": "f72292d6-096e-47ac-8088-e24001e9e3f5",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ArrowUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "fbfcc454-1ed1-47b7-b243-b94cdcd63caa",
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
+                    "action": "ArrowDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ae5d5fde-8954-4f7e-ba44-ba7b4b6b930a",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "ArrowDown",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -156,6 +200,17 @@
                 },
                 {
                     "name": "",
+                    "id": "236a7678-48c1-4ef3-93be-e56996336382",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ArrowRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "71fadfb9-3fd6-4f5c-b275-08dfb89a7ee2",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
@@ -167,8 +222,19 @@
                 },
                 {
                     "name": "",
+                    "id": "e74a5cb3-8bf7-4b4e-ba9d-4df1e5ef8d64",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ArrowLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e09aeba8-1fd3-4dd8-8dae-5570e88df60b",
-                    "path": "",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

@@ -31,9 +31,9 @@ public partial class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI _textTimer;
     [SerializeField] Image _imgPoison;
     [SerializeField] GameObject _gameOver;
+    [SerializeField] GameObject _gameWin;
 
     [SerializeField] Image _imgTransition;
-    [SerializeField] SpriteRenderer _imgGrille;
 
     [SerializeField] TextMeshProUGUI _textLevel;
 
@@ -80,10 +80,13 @@ public partial class GameManager : MonoBehaviour
     {
         if (_currentGrille.VerifGrille())
         {
-            Debug.Log("c'est gagné");
-            OnWin?.Invoke();
             SoundManager.instance.LevelComplete();
             _intCurrentLevel++;
+            if (_intCurrentLevel >= 37)
+            {
+                WinGame();
+            }
+            OnWin?.Invoke();
             Destroy(_currentGrille.gameObject);
             StartGame();
         }
@@ -102,10 +105,16 @@ public partial class GameManager : MonoBehaviour
         _textLevel.text = "Level : " + (_intCurrentLevel + 1).ToString();
         _currentGrille = Instantiate(poolGrille.GetGrille(_intCurrentLevel, copyPoolGrille));
         _currentGrille.transform.position = _anchorGrille.position;
-        _imgGrille.sprite = _currentGrille.grilleSprite;
         _inGame = true;
         _timer = 30f;
         _imgPoison.fillAmount = 0;
+    }
+
+    private void WinGame()
+    {
+        _inGame = false;
+        _gameWin.SetActive(true);
+        Destroy(_currentGrille.gameObject);
     }
 
     private IEnumerator Transition()
