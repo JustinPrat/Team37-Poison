@@ -53,6 +53,7 @@ public class CreateCellule : MonoBehaviour
         {
             if (_cellule.tileForm.baseForm == Base.None)
             {
+                SoundManager.instance.CraftingPiece();
                 _cellule.tileForm.baseForm = Base.Circle;
                 _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
             }
@@ -66,6 +67,7 @@ public class CreateCellule : MonoBehaviour
             Debug.Log(_cellule.tileForm.baseForm);
             if (_cellule.tileForm.baseForm == Base.None)
             {
+                SoundManager.instance.CraftingPiece();
                 _cellule.tileForm.baseForm = Base.Triangle;
                 _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
             }
@@ -76,6 +78,7 @@ public class CreateCellule : MonoBehaviour
     {
         if (context.performed)
         {
+            SoundManager.instance.CraftingPiece();
             _cellule.tileForm.arrowUp = true;
             _cellule.GetSprite();
         }
@@ -85,6 +88,7 @@ public class CreateCellule : MonoBehaviour
     {
         if (context.performed)
         {
+            SoundManager.instance.CraftingPiece();
             _cellule.tileForm.arrowDown = true;
             _cellule.GetSprite();
         }
@@ -94,6 +98,7 @@ public class CreateCellule : MonoBehaviour
     {
         if (context.performed)
         {
+            SoundManager.instance.CraftingPiece();
             _cellule.tileForm.arrowRight = true;
             _cellule.GetSprite();
         }
@@ -103,6 +108,7 @@ public class CreateCellule : MonoBehaviour
     {
         if (context.performed)
         {
+            SoundManager.instance.CraftingPiece();
             _cellule.tileForm.arrowLeft = true;
             _cellule.GetSprite();
         }
