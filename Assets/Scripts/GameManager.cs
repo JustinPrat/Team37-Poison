@@ -34,6 +34,8 @@ public partial class GameManager : MonoBehaviour
 
     [SerializeField] Image _imgTransition;
 
+    [SerializeField] TextMeshProUGUI _textLevel;
+
     private void Awake()
     {
         instanceGameManager = this;
@@ -96,6 +98,7 @@ public partial class GameManager : MonoBehaviour
 
     private void StartGame()
     {
+        _textLevel.text = "Level : " + (_intCurrentLevel + 1).ToString();
         _currentGrille = Instantiate(poolGrille.GetGrille(_intCurrentLevel, copyPoolGrille));
         _currentGrille.transform.position = _anchorGrille.position;
         _inGame = true;
