@@ -572,7 +572,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      antidote_0: -3313696215841133787
+      antidote_1: -775061655729340472
+      antidote_10: -4227814332998181978
+      antidote_11: 6257219781275431115
+      antidote_12: 5283714052033396784
+      antidote_13: -1322037503302353396
+      antidote_14: -6605093252467355990
+      antidote_15: -4236891483380099419
+      antidote_16: -1032266939978072102
+      antidote_17: -8815187858595778424
+      antidote_2: -6053905681083572643
+      antidote_3: -6292088559262091712
+      antidote_4: -7001985832108797245
+      antidote_5: 445322037950880783
+      antidote_6: 1877731509443500202
+      antidote_7: -7368929073257786717
+      antidote_8: -3333301355353504447
+      antidote_9: 3859516426154214172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

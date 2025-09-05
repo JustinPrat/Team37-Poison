@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      logo_poison_37_0: -3067779792323442689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
