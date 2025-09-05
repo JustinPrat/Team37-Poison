@@ -4142,6 +4142,7 @@ MonoBehaviour:
   _imgPoison: {fileID: 1984340357}
   _gameOver: {fileID: 740387647}
   _gameWin: {fileID: 145389848}
+  _imgPreview: {fileID: 90604027}
   _imgTransition: {fileID: 650267237}
   _textLevel: {fileID: 771904281}
 --- !u!4 &1881374622

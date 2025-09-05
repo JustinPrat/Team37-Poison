@@ -33,6 +33,7 @@ public partial class GameManager : MonoBehaviour
     [SerializeField] GameObject _gameOver;
     [SerializeField] GameObject _gameWin;
 
+    [SerializeField] SpriteRenderer _imgPreview;
     [SerializeField] Image _imgTransition;
 
     [SerializeField] TextMeshProUGUI _textLevel;
@@ -104,6 +105,7 @@ public partial class GameManager : MonoBehaviour
     {
         _textLevel.text = "Level : " + (_intCurrentLevel + 1).ToString();
         _currentGrille = Instantiate(poolGrille.GetGrille(_intCurrentLevel, copyPoolGrille));
+        _imgPreview.sprite = _currentGrille.grilleSprite;
         _currentGrille.transform.position = _anchorGrille.position;
         _inGame = true;
         _timer = 30f;
