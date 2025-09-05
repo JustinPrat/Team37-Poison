@@ -11,7 +11,6 @@ public class PlayQuit : MonoBehaviour
 
     [SerializeField] AudioSource _audioSourcePlay;
     [SerializeField] AudioSource _audioSourceQuit;
-    [SerializeField] AudioSource _audioSourceRetry;
 
     private void Start()
     {
@@ -35,7 +34,6 @@ public class PlayQuit : MonoBehaviour
 
     public void Retry()
     {
-        _audioSourceRetry.Play();
         StartCoroutine(Transition0to1("Menu"));
     }
 

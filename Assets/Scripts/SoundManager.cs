@@ -6,7 +6,10 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance;
 
-    public AudioSource _audioSource;
+    public AudioSource _audioSourceHealth;
+    public AudioSource _audioSourceMusic;
+
+    public AudioSource _audioSourceClip;
 
     public AudioClip _audioClipCrafting;
     public AudioClip _audioClipPlacing;
@@ -21,31 +24,34 @@ public class SoundManager : MonoBehaviour
 
     public void CraftingPiece()
     {
-        _audioSource.resource = _audioClipCrafting;
-        _audioSource.Play();
+        _audioSourceClip.resource = _audioClipCrafting;
+        _audioSourceClip.Play();
     }
 
     public void PlacingPiece()
     {
-        _audioSource.resource= _audioClipPlacing;
-        _audioSource.Play();
+        _audioSourceClip.resource= _audioClipPlacing;
+        _audioSourceClip.Play();
     }
 
-    public void GameOverPiece()
+    public void GameOver()
     {
-        _audioSource.resource=_audioClipGameOver;
-        _audioSource.Play();
+        _audioSourceHealth.Stop();
+        _audioSourceMusic.volume = 0.1f;
+        //_audioSourceMusic.Stop();
+        _audioSourceClip.resource=_audioClipGameOver;
+        _audioSourceClip.Play();
     }
 
     public void LevelComplete()
     {
-        _audioSource.resource = _audioClipLevelComplete;
-        _audioSource.Play();
+        _audioSourceClip.resource = _audioClipLevelComplete;
+        _audioSourceClip.Play();
     }
 
     public void PieceMoving()
     {
-        _audioSource.resource = _audioClipPieceMoving;
-        _audioSource.Play();
+        _audioSourceClip.resource = _audioClipPieceMoving;
+        _audioSourceClip.Play();
     }
 }

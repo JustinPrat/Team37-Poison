@@ -40,6 +40,7 @@ public class CelluleTile : MonoBehaviour
             transform.position = _cellule.transform.position;
             _cellule.lockedInPattern = true;
 
+            SoundManager.instance.PlacingPiece();
             GameManager.instanceGameManager.VerifPatternComplete();
         }
 
@@ -58,6 +59,7 @@ public class CelluleTile : MonoBehaviour
                 //Cursor.SetCursor(cursorTextureGrab, hotSpot, cursorMode);
             }
 
+            SoundManager.instance.PieceMoving();
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(transform.position.x, transform.position.y, 0);
             currentCellule = this;

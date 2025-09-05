@@ -35,6 +35,8 @@ public partial class GameManager : MonoBehaviour
     [SerializeField] Image _imgTransition;
     [SerializeField] SpriteRenderer _imgGrille;
 
+    [SerializeField] TextMeshProUGUI _textLevel;
+
     private void Awake()
     {
         instanceGameManager = this;
@@ -80,6 +82,7 @@ public partial class GameManager : MonoBehaviour
         {
             Debug.Log("c'est gagné");
             OnWin?.Invoke();
+            SoundManager.instance.LevelComplete();
             _intCurrentLevel++;
             Destroy(_currentGrille.gameObject);
             StartGame();
@@ -88,6 +91,7 @@ public partial class GameManager : MonoBehaviour
 
     private void GameOver()
     {
+        SoundManager.instance.GameOver();
         _inGame = false;
         _gameOver.SetActive(true);
         Destroy(_currentGrille.gameObject);
@@ -95,6 +99,7 @@ public partial class GameManager : MonoBehaviour
 
     private void StartGame()
     {
+        _textLevel.text = "Level : " + (_intCurrentLevel + 1).ToString();
         _currentGrille = Instantiate(poolGrille.GetGrille(_intCurrentLevel, copyPoolGrille));
         _currentGrille.transform.position = _anchorGrille.position;
         _imgGrille.sprite = _currentGrille.grilleSprite;
