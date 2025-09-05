@@ -1,4 +1,5 @@
 using Alchemy.Inspector;
+using UnityEditor;
 using UnityEngine;
 
 public class Cellule : MonoBehaviour
@@ -21,6 +22,8 @@ public class Cellule : MonoBehaviour
         spriteConnectionDown.sprite = tileForm.arrowDown ? spriteSelect.connectionSprites[Connection.Down] : null;
         spriteConnectionLeft.sprite = tileForm.arrowLeft ? spriteSelect.connectionSprites[Connection.Left] : null;
         spriteConnectionRight.sprite = tileForm.arrowRight ? spriteSelect.connectionSprites[Connection.Right] : null;
+
+        EditorUtility.SetDirty(gameObject);
     }
 
     public void Turn()

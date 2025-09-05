@@ -22,6 +22,15 @@ public class Grille : MonoBehaviour
         }
     }
 
+    [Button]
+    private void UpdateSprites ()
+    {
+        for (int i = transform.childCount - 1; i >= 0; i--)
+        {
+            transform.GetChild(i).GetComponent<Cellule>().GetSprite();
+        }
+    }
+
     private void DestroyGrille()
     {
         for (int i = transform.childCount - 1; i >= 0; i--)
