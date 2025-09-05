@@ -1,4 +1,5 @@
 using DG.Tweening;
+using OutlineFx;
 using UnityEngine;
 
 public class CelluleTile : MonoBehaviour
@@ -15,6 +16,8 @@ public class CelluleTile : MonoBehaviour
     private ParticleSystem _spawnParticles;
 
     public ParticleSystem SpawnParticles => _spawnParticles;
+
+    [SerializeField] private Outline _outlineFx;
 
     public Animator animator => _animator;
 
@@ -43,6 +46,10 @@ public class CelluleTile : MonoBehaviour
             canDrag = false;
             transform.position = _cellule.transform.position;
             _cellule.lockedInPattern = true;
+
+            Color color = _outlineFx.Color;
+            color.a = 1;
+            _outlineFx.Color = color;
 
             SoundManager.instance.PlacingPiece();
             GameManager.instanceGameManager.VerifPatternComplete();

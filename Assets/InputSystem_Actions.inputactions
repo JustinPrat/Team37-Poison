@@ -24,15 +24,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Triangle",
-                    "type": "Button",
-                    "id": "66f1b3d9-a39d-497c-902d-3d22a9364f1c",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "ArrowUp",
                     "type": "Button",
                     "id": "81ea90d4-96d2-4fa0-9c3e-ab23695ecd4b",
@@ -129,17 +120,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Circle",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "cc758257-c138-43d0-8b30-4c13e6ab4e85",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Triangle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

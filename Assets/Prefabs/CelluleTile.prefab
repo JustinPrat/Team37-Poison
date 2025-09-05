@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1038672783843224985}
   - component: {fileID: 31813502175923103}
   - component: {fileID: 6205656736432334725}
+  - component: {fileID: 7009516701898754849}
   m_Layer: 0
   m_Name: TileSprite
   m_TagString: Untagged
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.69, y: 0.65}
+  m_Size: {x: 0.828, y: 0.78}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -129,6 +130,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cellule: {fileID: 1332122152667323905}
   _celluleTile: {fileID: 8946810573304535092}
+--- !u!114 &7009516701898754849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480240565723122346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4218d78ef2d54d0898b7514e121a781f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _color: {r: 0.06500542, g: 1, b: 0, a: 0}
 --- !u!1 &1473030826716641019
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,6 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 31813502175923103}
   _spawnParticles: {fileID: 2855680636872811138}
+  _outlineFx: {fileID: 7009516701898754849}
   ownCellule: {fileID: 1332122152667323905}
   cursorTextureGrab: {fileID: 2800000, guid: 0bc75129792dc1e4a80c022b2bd3f7da, type: 3}
 --- !u!50 &-6067750875104044920
