@@ -25,10 +25,10 @@ public class CelluleTile : MonoBehaviour
     public Texture2D cursorTextureGrab;
     private Vector2 hotSpot;
 
-    private void Start()
-    {
-        hotSpot =  new Vector2(cursorTextureGrab.width / 2, cursorTextureGrab.height /2 );
-    }
+    //private void Start()
+    //{
+    //    hotSpot =  new Vector2(cursorTextureGrab.width / 2, cursorTextureGrab.height /2 );
+    //}
 
     public void SetGrabbable(bool isGrabbable)
     {
@@ -61,7 +61,7 @@ public class CelluleTile : MonoBehaviour
             {
                 _animator.SetTrigger("squish");
             }
-            Cursor.SetCursor(cursorTextureGrab, hotSpot, CursorMode.Auto);
+            //Cursor.SetCursor(cursorTextureGrab, hotSpot, CursorMode.Auto);
             SoundManager.instance.PieceMoving();
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(transform.position.x, transform.position.y, 0);
