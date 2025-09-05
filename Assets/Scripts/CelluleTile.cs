@@ -22,6 +22,10 @@ public class CelluleTile : MonoBehaviour
 
     public Cellule ownCellule;
 
+    public Texture2D cursorTextureGrab;
+    public CursorMode cursorMode = CursorMode.Auto;
+    public Vector2 hotSpot = Vector2.zero;
+
     public void SetGrabbable(bool isGrabbable)
     {
         canDrag = isGrabbable;
@@ -41,6 +45,7 @@ public class CelluleTile : MonoBehaviour
 
         _animator.SetTrigger("squishout");
         currentCellule = null;
+        //Cursor.SetCursor(null, Vector2.zero, cursorMode);
     }
 
     private void OnMouseDrag()
@@ -50,6 +55,7 @@ public class CelluleTile : MonoBehaviour
             if (currentCellule != this)
             {
                 _animator.SetTrigger("squish");
+                //Cursor.SetCursor(cursorTextureGrab, hotSpot, cursorMode);
             }
 
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);

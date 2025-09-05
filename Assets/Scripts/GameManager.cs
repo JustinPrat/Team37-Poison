@@ -64,7 +64,7 @@ public partial class GameManager : MonoBehaviour
             _timer -= Time.deltaTime;
             TimeSpan time = TimeSpan.FromSeconds(_timer);
             _textTimer.text = string.Format("{0:00}:{1:00}", time.Minutes, time.Seconds);
-            _imgPoison.fillAmount = 1 - Mathf.Clamp01(_timer / 30f);
+            _imgPoison.fillAmount = Mathf.Clamp01(_timer / 30f);
 
             if (_timer < 0)
             {
