@@ -41,8 +41,9 @@ public class CreateCellule : MonoBehaviour
         {
             if (_cellule.tileForm.baseForm == Base.None)
             {
+                SoundManager.instance.CraftingPiece();
                 _cellule.tileForm.baseForm = Base.Square;
-                _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
+                _cellule.GetComponent<CelluleTile>().animator.SetTrigger("spawn");
             }
         }
     }
