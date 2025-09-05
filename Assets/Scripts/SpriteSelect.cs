@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Alchemy.Serialization;
 using Alchemy.Inspector;
+using UnityEditor;
 
 [CreateAssetMenu(fileName = "SpriteSelect", menuName = "Poison37/SpriteSelect", order = 1)]
 [AlchemySerialize]
@@ -13,6 +14,14 @@ public partial class SpriteSelect : ScriptableObject
 
     [AlchemySerializeField, NonSerialized]
     public Dictionary<Connection, Sprite> connectionSprites;
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        EditorUtility.SetDirty(this);
+    }
+#endif
+
 }
 
 [Serializable]

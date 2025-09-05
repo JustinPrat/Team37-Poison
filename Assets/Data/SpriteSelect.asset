@@ -13,7 +13,18 @@ MonoBehaviour:
   m_Name: SpriteSelect
   m_EditorClassIdentifier: 
   __alchemySerializationData_SpriteSelect:
-    tileSprites:
+    baseSprites:
       isCreated: 1
-      data: 
-    unityObjectReferences: []
+      data: "[\n    {\n        \"Key\": 0,\n        \"Value\": null\n    },\n   
+        {\n        \"Key\": 1,\n        \"Value\": 0\n    },\n    {\n        \"Key\":
+        2,\n        \"Value\": 1\n    }\n]"
+    connectionSprites:
+      isCreated: 1
+      data: "[\n    {\n        \"Key\": 0,\n        \"Value\": 2\n    },\n    {\n       
+        \"Key\": 1,\n        \"Value\": 2\n    },\n    {\n        \"Key\": 2,\n       
+        \"Value\": 2\n    },\n    {\n        \"Key\": 3,\n        \"Value\": 2\n   
+        }\n]"
+    unityObjectReferences:
+    - {fileID: 21300000, guid: a3f01ca1e7936114e9505d82ec14290d, type: 3}
+    - {fileID: 21300000, guid: 6c9c7b778eca3fc4e971f96621775d12, type: 3}
+    - {fileID: 21300000, guid: 6505c1c32f959cc41bc7dd35c11af14a, type: 3}

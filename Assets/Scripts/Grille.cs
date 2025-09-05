@@ -8,6 +8,7 @@ public class Grille : MonoBehaviour
     [SerializeField] Cellule cellulePrefab;
     public Sprite grilleSprite;
 
+#if UNITY_EDITOR
     [Button]
     private void InitGrille(int x, int y)
     {
@@ -31,6 +32,7 @@ public class Grille : MonoBehaviour
             transform.GetChild(i).GetComponent<Cellule>().GetSprite();
         }
     }
+#endif
 
     private void DestroyGrille()
     {

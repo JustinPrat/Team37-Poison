@@ -23,7 +23,9 @@ public class Cellule : MonoBehaviour
         spriteConnectionLeft.sprite = tileForm.arrowLeft ? spriteSelect.connectionSprites[Connection.Left] : null;
         spriteConnectionRight.sprite = tileForm.arrowRight ? spriteSelect.connectionSprites[Connection.Right] : null;
 
+#if UNITY_EDITOR
         EditorUtility.SetDirty(gameObject);
+#endif
     }
 
     public void Turn()
