@@ -81,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -247,7 +247,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7812913836433199142}
   - {fileID: 4592290767096947603}
@@ -293,7 +293,6 @@ MonoBehaviour:
   _spawnParticles: {fileID: 2855680636872811138}
   ownCellule: {fileID: 1332122152667323905}
   cursorTextureGrab: {fileID: 2800000, guid: 0bc75129792dc1e4a80c022b2bd3f7da, type: 3}
-  cursorTextureDefault: {fileID: 2800000, guid: 8ba5859ca36bd804381b12a6e0ca644b, type: 3}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!50 &-6067750875104044920
@@ -358,7 +357,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.3
+  m_Radius: 0.4
 --- !u!1 &2370066907342418199
 GameObject:
   m_ObjectHideFlags: 0
@@ -5218,7 +5217,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_RenderMode: 5
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -5506,7 +5505,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.21333334, y: 0.39333335}
+  m_Size: {x: 0.16, y: 0.295}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
