@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolElements:
   - isRandom: 0
-    maxLevel: 5
+    maxLevel: 4
     grilles:
     - {fileID: 9087156781545354218, guid: 70e0fb8cd0500c541a578f79a7839b37, type: 3}
     - {fileID: 1099051673284641074, guid: eea8ba2ce79e40a43a2ce733649655bf, type: 3}
@@ -22,7 +22,7 @@ MonoBehaviour:
     - {fileID: 5482563479034975605, guid: 5ab0d45baaf81524d943bbf517284fe7, type: 3}
     - {fileID: 771018778050361140, guid: 5e19e61777eebd344b5b21523f4be982, type: 3}
   - isRandom: 1
-    maxLevel: 15
+    maxLevel: 14
     grilles:
     - {fileID: 3354991355135417180, guid: 499f715d6ad40f64b9e99f30a36ff278, type: 3}
     - {fileID: 1569483149393414248, guid: 19809653d45f30d448680af0e3cbe06a, type: 3}
@@ -35,7 +35,7 @@ MonoBehaviour:
     - {fileID: 195730197062903972, guid: 4aa763338be35984a82e37da33cb8ac8, type: 3}
     - {fileID: 7189399269547699296, guid: 34ab1fb394899bd4da8941e42012269d, type: 3}
   - isRandom: 1
-    maxLevel: 25
+    maxLevel: 24
     grilles:
     - {fileID: 3594644906313919837, guid: 7650fecfd82352049931a40f0cdd6e1b, type: 3}
     - {fileID: 2216626832611598677, guid: b93fceae3790456419235dc18e0779da, type: 3}
@@ -48,7 +48,7 @@ MonoBehaviour:
     - {fileID: 5400659597825139231, guid: 80b350ac35549844db9959e98e855e21, type: 3}
     - {fileID: 8271395325876702260, guid: 858ef00c4cf3625439c8447ec25076dc, type: 3}
   - isRandom: 1
-    maxLevel: 37
+    maxLevel: 36
     grilles:
     - {fileID: 1592400398559511608, guid: 4291d689f0146cb4fb07e87ce102e857, type: 3}
     - {fileID: 943918371013187179, guid: dc42cee880446b049bbcc6a6582d36f3, type: 3}
