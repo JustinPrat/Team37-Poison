@@ -33,6 +33,7 @@ public partial class GameManager : MonoBehaviour
     [SerializeField] GameObject _gameOver;
 
     [SerializeField] Image _imgTransition;
+    [SerializeField] SpriteRenderer _imgGrille;
 
     private void Awake()
     {
@@ -96,6 +97,7 @@ public partial class GameManager : MonoBehaviour
     {
         _currentGrille = Instantiate(poolGrille.GetGrille(_intCurrentLevel, copyPoolGrille));
         _currentGrille.transform.position = _anchorGrille.position;
+        _imgGrille.sprite = _currentGrille.grilleSprite;
         _inGame = true;
         _timer = 30f;
         _imgPoison.fillAmount = 0;

@@ -42,7 +42,7 @@ public class CreateCellule : MonoBehaviour
             if (_cellule.tileForm.baseForm == Base.None)
             {
                 _cellule.tileForm.baseForm = Base.Square;
-                _cellule.GetComponent<CelluleTile>().animator.SetTrigger("spawn");
+                _cellule.GetComponent<CelluleTile>().animator.SetTrigger("fold");
             }
         }
     }

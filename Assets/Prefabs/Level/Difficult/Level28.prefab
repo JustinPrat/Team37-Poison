@@ -61,6 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellulePrefab: {fileID: 1332122152667323905, guid: dd2e3c7aed4449641bfc90aff5641ece, type: 3}
+  grilleSprite: {fileID: 21300000, guid: f7440a23ed4b6ed42bdf167abc587865, type: 3}
 --- !u!1001 &595488771569808878
 PrefabInstance:
   m_ObjectHideFlags: 0

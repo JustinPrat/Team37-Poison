@@ -6,6 +6,7 @@ using UnityEngine;
 public class Grille : MonoBehaviour
 {
     [SerializeField] Cellule cellulePrefab;
+    public Sprite grilleSprite;
 
     [Button]
     private void InitGrille(int x, int y)
