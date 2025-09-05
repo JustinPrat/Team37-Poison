@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0bc75129792dc1e4a80c022b2bd3f7da
+guid: 3151250a277e8d945971484a69e24a80
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 465633129763809365
-    second: "Mains_ferm\xE9_0"
+      213: -633652165576114881
+    second: bg_menu1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -57,7 +57,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 7
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Mains_ferm\xE9_0"
+      name: bg_menu1_0
       rect:
         serializedVersion: 2
-        x: 697
-        y: 72
-        width: 740
-        height: 1250
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 558a93f4dd2467600800000000000000
-      internalID: 465633129763809365
+      spriteID: f3dbdaf66b0d437f0800000000000000
+      internalID: -633652165576114881
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "Mains_ferm\xE9_0": 465633129763809365
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
