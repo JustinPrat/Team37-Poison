@@ -17,7 +17,7 @@ public class PlayQuit : MonoBehaviour
     {
         Debug.Log("debur");
         //SceneManager.LoadScene(_nameSceneJeu);
-        StartCoroutine(Transition());
+        StartCoroutine(Transition(_nameSceneJeu));
     }
 
     public void Quit()
@@ -25,7 +25,12 @@ public class PlayQuit : MonoBehaviour
         Application.Quit();
     }
 
-    private IEnumerator Transition()
+    public void Retry()
+    {
+        StartCoroutine(Transition("Menu"));
+    }
+
+    private IEnumerator Transition(string nameScene)
     {
         float temps = 0f;
         float duree = 1f;
@@ -41,6 +46,6 @@ public class PlayQuit : MonoBehaviour
         }
 
         _imgTransition.color = new Color(_imgTransition.color.r, _imgTransition.color.g, _imgTransition.color.b, 1f);
-        SceneManager.LoadScene(_nameSceneJeu);
+        SceneManager.LoadScene(nameScene);
     }
 }
